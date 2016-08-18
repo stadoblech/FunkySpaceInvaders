@@ -17,11 +17,11 @@ public class PlayerMovement : MonoBehaviour {
 
     void Start () {
         mainCamera = Camera.main;
-
         
     }
 
   	void Update () {
+
 
         LeftDownBoundaries = mainCamera.transform.GetChild(0).position;
         RightUpBoundaries = mainCamera.transform.GetChild(1).position;
@@ -63,5 +63,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             transform.position = new Vector3(transform.position.x, RightUpBoundaries.y);
         }
+
+        
     }
 }
